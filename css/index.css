@@ -1,0 +1,242 @@
+
+
+html {
+	height: 100%;
+}
+
+body { 
+	width: 100%;
+	height: 100%;
+	position: relative;
+  	text-align: center;
+  	overflow: hidden;
+}
+
+.radial-gradient {
+	position:fixed;
+	top:0px;
+	left:0px;
+	height:100%;
+	width:100%;
+	background-image: radial-gradient(circle, #FFFFFF, #FFC0AF);
+}
+
+.radial-gradient svg{
+	width: 30vh;
+	position: absolute;
+	top: 15%;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.radial-gradient h1{
+	font-size: 24px;
+	font-family: 'Dancing Script','Times New Roman', serif;
+	display: none;
+	position: absolute;
+	color: #000;
+	top: 55%;
+	transform: translateY(-50%);
+	left:0;
+	right:0;
+}
+	
+.radial-gradient #enter_Btn{
+	display: none;
+	margin: auto;
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.radial-gradient #enter_Btn a{
+	display: block;
+	color:#000;
+	font-size: 16px;
+	text-decoration: none;
+	border: 2px solid transparent;
+	padding: 10px 20px;
+	position: relative;
+}
+
+
+.radial-gradient #enter_Btn a:before,
+.radial-gradient #enter_Btn a:after{
+	content: '';
+	border: 2px solid transparent;
+	width: 0;
+	height: 0;
+	position: absolute;
+	transition: .5s;
+}
+
+.radial-gradient #enter_Btn a:before{
+	top: -2px;
+   	left: -2px;
+   	-ms-animation: bordertl 0.5s  ease-out 1;
+   	-o-animation: bordertl 0.5s  ease-out 1;
+   	-moz-animation: bordertl 0.5s  ease-out 1;
+   	-webkit-animation: bordertl 0.5s  ease-out 1;
+   	animation: bordertl 0.5s  ease-out 1;
+   	-ms-animation-fill-mode:forwards;
+   	-o-animation-fill-mode:forwards;
+   	-moz-animation-fill-mode:forwards;
+   	-webkit-animation-fill-mode:forwards;
+   	animation-fill-mode:forwards;
+}
+
+
+.radial-gradient #enter_Btn a:after{
+	bottom: -2px;
+   	right: -2px;
+   	-ms-animation: borderbr 0.5s  ease-out 1;
+   	-o-animation: borderbr 0.5s  ease-out 1;
+   	-moz-animation: borderbr 0.5s  ease-out 1;
+   	-webkit-animation: borderbr 0.5s  ease-out 1;
+   	animation: borderbr 0.5s  ease-out 1;
+   	-ms-animation-fill-mode:forwards;
+   	-o-animation-fill-mode:forwards;
+   	-moz-animation-fill-mode:forwards;
+   	-webkit-animation-fill-mode:forwards;
+   	animation-fill-mode:forwards;
+}
+
+@keyframes bordertl{
+	0% {width: 0; 
+		height: 0;
+	}
+	100%{
+		width: 100%;
+		height: 100%;
+	    border-top-color: #000; 
+   		border-left-color: #000;
+   	}
+   }
+
+@keyframes borderbr{
+	0%{
+		width: 0; 
+		height: 0;
+	}
+	100%{
+		width: 100%; 
+		height: 100%;
+	    border-bottom-color: #000; 
+   		border-right-color: #000;
+   	}
+}
+
+
+
+.cls-1,.cls-2,.cls-4{stroke-miterlimit:10;}
+.cls-1{fill:url(#logo_RG_1);stroke:url(#logo_RG-2);}
+.cls-2{fill:url(#logo_RG-3);stroke:url(#logo_RG-4);}
+.cls-3{fill:#ead651;}
+.cls-4{fill:none;stroke-width:2px;stroke:url(#logo_RG_5);}
+
+
+.word_Path, .polygon_Path, .polyline_Path, .circle_Path {
+	-ms-animation-fill-mode:forwards;
+	-o-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	-webkit-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+}
+
+
+/*字型*/
+.word_Path{
+	animation: word_Path 5s ease-out;
+}
+
+/*星型*/
+.polygon_Path{
+    animation: polygon_Path 2s ease-out;
+}
+
+/*圓形*/
+.circle_Path{
+    animation: circle_Path 2s ease-out;
+}
+
+
+@keyframes word_Path {
+    0% {
+        stroke-dasharray: 0, 360.8102111816406;
+        opacity: 0;
+    }
+    100% {
+       stroke-dasharray: 721.6204223632812, 721.6204223632812;
+       opacity: 1;
+    }
+}
+
+@keyframes polygon_Path {
+    0% {
+        stroke-dasharray: 0, 19.447566986083984;
+        opacity: 0;
+    }
+    100% {
+       stroke-dasharray: 19.447566986083984, 19.447566986083984;
+       opacity: 1;
+    }
+}
+
+@keyframes circle_Path {
+    0% {
+        stroke-dasharray: 0, 304.2421569824219;
+        opacity: 0;
+    }
+    100% {
+       stroke-dasharray: 304.2421569824219, 304.2421569824219;
+       opacity: 1;
+    }
+}
+
+@media screen and (min-width: 768px){
+	.radial-gradient svg{
+		top: 15%;
+	}
+
+	.radial-gradient h1{
+		font-size: 34px;
+	}
+
+	.radial-gradient #enter_Btn a{
+		font-size: 17px;
+	}
+}
+
+
+@media screen and (min-width: 992px){
+	.radial-gradient svg{
+		top: 12.5%;
+	}
+
+	.radial-gradient h1{
+		font-size: 46px;
+	}
+
+	.radial-gradient #enter_Btn a{
+		font-size: 18px;
+	}
+}
+	
+
+
+@media screen and (min-width: 1200px){
+	.radial-gradient svg{
+		top: 10%;
+	}
+
+	.radial-gradient h1{
+		font-size: 58px;
+	}
+
+	.radial-gradient #enter_Btn a{
+		font-size: 20px;
+	}
+}
+

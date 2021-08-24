@@ -1,0 +1,385 @@
+.page_Title{
+	background-image: url(../images/artist_banner.jpg);
+	/*background-image: url(../images/source.gif);*/
+	/*background-position: 100% 25%;*/
+}
+
+/* Style tab links */
+
+.tablink_Area{
+    width: 100%;
+    padding:0px 20px;
+}
+
+.tablink_Area:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.tablink {
+    float: left;
+    /*background-color: #eee;*/
+    border-top: 1.5px solid transparent;
+    border-left: 1.5px solid transparent;
+    border-right: 1.5px solid transparent;
+    border-bottom: 1.5px solid transparent;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 0px;
+    font-size: 16px;
+    width: 25%;
+    transition: color .5s;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: #000;
+    display: none;
+    padding: 20px;
+    height: 100%;
+}
+
+#Profile:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#Profile .artists_Pic{
+	width: 100%;
+    margin-bottom: 15px;
+}
+
+#Profile .artists_Pic img{
+	width: 100%;
+}
+
+#Profile .artists_Name{
+	width: 100%;
+    margin-bottom: 15px;
+}
+
+#Profile .artists_Name h3{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#Profile td{
+    vertical-align: text-top;
+    font-size: 16px;
+    padding: 5px 15px 5px 0px;
+    line-height: 1.5;
+}
+
+#Profile .artists_Brief{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#Profile .artists_Brief h3{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#Album:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#Album .album_Area{
+    width: calc(50% - 10px);
+}
+
+#Album .album_Area .album_Pic{
+    width: 100%;
+    max-height: calc(50% - 10px);
+    margin-bottom: 5px;
+}
+
+.album_Pic img{
+    width: 100%;
+    max-height: calc(50% - 10px);
+    object-fit: fill;
+}
+
+.album_Area p{
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#Album .album_Area:nth-of-type(odd){
+    float: left;
+}
+
+#Album .album_Area:nth-of-type(even){
+    float: right;
+}
+
+
+/*#Gallery{
+    /*width: 100%;*/
+    /*background-color: #aaa;*/
+/**/
+
+/*#Gallery .grid_sizer{
+    width: 100%;
+    margin-bottom: 15px;
+    float: left;
+    overflow:hidden;
+}*/
+
+#Gallery{
+    text-align: center;
+    margin: 0 auto；;
+}
+
+#Gallery:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#Gallery .gallery_Pic{
+    width: 90%;
+    /*padding: 10px;*/
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+#Gallery .gallery_Pic a{
+    display: block;
+}
+
+
+#Gallery .gallery_Pic img{
+    /*width: calc(100% - 20px);*/
+    width: 100%;
+    /*display: block;*/
+}
+
+
+#Schedule{
+    width: 100%;
+    text-align: center;
+}
+
+#Schedule ul{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 0 10%;
+    font-size: 0;
+}
+
+#Schedule ul li{
+    width: 10%;
+    display: inline-block;
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+#Schedule ul li:nth-of-type(3){
+    width: 35%;
+}
+
+#Schedule span{
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+#Schedule .minus_Year, 
+#Schedule .minus_Month, 
+#Schedule .add_Year, 
+#Schedule .add_Month{
+    cursor: pointer;
+}
+
+#Schedule #calendar{
+    width: 100%;
+}
+
+#Schedule table{
+    width: 100%;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+#Schedule th{
+    width: 14.285%;
+    border: 1px solid #000;
+    vertical-align: text-top;
+    font-size: 16px;
+    padding: 5px 5px 5px 5px;
+    line-height: 1.5;
+}
+
+#Schedule td{
+    width: 14.285%;
+    border: 1px solid #000;
+    vertical-align: text-top;
+    text-align: left;
+    font-size: 14px;
+    padding: 3px 20px 20px 3px;
+    line-height: 1.5;
+}
+
+
+@media screen and (min-width: 768px) {
+    #Profile .artists_Name, 
+    #Profile .artists_Brief{
+        width: calc(50% - 10px);
+    }
+
+    #Profile .artists_Name{
+        float: left;
+    }
+
+    #Profile .artists_Brief{
+        float: right;
+    }
+
+    #Profile .artists_Name h3{
+        font-size: 31px;
+    }
+
+    #Profile .artists_Brief h3{
+        font-size: 31px;
+    }
+
+    #Profile td{
+        font-size: 17px;
+    }
+
+    #Album .album_Area{
+        width: calc(33.3333% - 20px);
+        margin: 0 10px 15px;
+    }
+
+    #Album .album_Area .album_Pic{
+        max-height: calc(33.3333% - 20px);
+    }
+
+    .album_Pic img{
+        max-height: calc(33.3333% - 20px);
+    }
+
+    #Album .album_Area:nth-of-type(n){
+        float: left;
+    }
+
+    #Album .album_Area p{
+        font-size: 17px;
+        line-height: 1.444;
+    }
+
+    #Gallery .gallery_Pic{
+        width: 46.3%;
+        /*padding: 10px;*/
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    #Profile td{
+        font-size: 18px;
+    }
+
+    #Profile .artists_Name h3{
+        font-size: 33px;
+    }
+    
+    #Profile .artists_Brief h3{
+        font-size: 33px;
+    }
+
+    #Album .album_Area p{
+        font-size: 18px;
+        line-height: 1.444;
+    }
+    
+    #Gallery .gallery_Pic{
+        width: 30.9%;
+        /*padding: 10px;*/
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .tablink{
+        font-size: 18px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #Profile td{
+        font-size: 20px;
+    }
+
+    #Profile .artists_Name h3{
+        font-size: 36px;
+    }
+
+    #Profile .artists_Brief h3{
+        font-size: 36px;
+    }
+
+    #Album .album_Area{
+        width: calc(25% - 20px);
+        margin: 0 10px 15px;
+    }
+
+    #Album .album_Area .album_Pic{
+        max-height: calc(25% - 20px);
+    }
+
+    #Album .album_Area p{
+        font-size: 20px;
+        line-height: 1.444;
+    }
+
+    .album_Pic img{
+        max-height: calc(25% - 20px);
+    }
+
+    #Gallery .gallery_Pic{
+        width: 23.1222%;
+        /*padding: 10px;*/
+        margin-bottom: 15px;
+    }
+
+    #Schedule ul li{
+        width: 5%;
+        display: inline-block;
+        font-size: 20px;
+        padding: 5px 0;
+    }
+
+    #Schedule ul li:nth-of-type(3){
+        width: 20%;
+    }
+
+    #Schedule .minus_Year, 
+    #Schedule .minus_Month, 
+    #Schedule .add_Year, 
+    #Schedule .add_Month{
+        cursor: pointer;
+        font-size: 22px;
+    }
+
+
+    #Schedule table{
+        width: 100%;
+        border: 1px solid #000;
+        text-align: center;
+    }
+
+    #Schedule td{
+        height: 80px;
+    }
+}

@@ -1,0 +1,260 @@
+.page_Title{
+    background-image: url(../images/contact_banner.jpg);
+    /*background-position: 100% 33%;*/
+}
+
+
+.company_Map{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.company_Map iframe{
+    width: 100%;
+    height: 30vh; 
+}
+
+.company_Location{
+    width: 100%;
+    padding: 10px;
+}
+
+.company_Location h3{
+    line-height: 1.5;
+    font-size: 28px;
+    padding-left: 5px;
+    position: relative;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.company_Location h3::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    background-color: #E89032;
+    left: -7px;
+    bottom: 6px;
+    top: 6px;
+}
+
+.company_Address{
+    width: 100%;
+    margin-bottom: 15px; 
+}
+
+.address_Method{
+    width: 100%;
+    margin: 15px 0px;
+}
+
+.method_Icon{
+    /*width: 37px;*/
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.method_Icon img{
+    width: 100%;
+}
+
+.method_Txt{
+    width: calc(100% - 52px);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.method_Txt p{
+    /*font-size: 18px;*/
+    font-size: 14px;
+    line-height: 1.333;
+}
+
+.feedback_Area{
+    width: 100%;
+    padding:10px;
+}
+
+
+.feedback_Area h3{
+    line-height: 1.5;
+    font-size: 28px;
+    padding-left: 5px;
+    position: relative;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.feedback_Area h3::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    background-color: #E89032;
+    left: -7px;
+    bottom: 6px;
+    top: 6px;
+}
+
+
+
+.feedback_Content{
+    width: 100%;
+}
+
+.feedback_Name, 
+.feedback_Email, 
+.feedback_Content{
+    width: 100%;
+    margin: 15px 0;
+}
+
+
+.feedback_Title{
+    display: block;
+    width: 100%;
+    color: #000;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    padding: 5px;
+    margin: 5px 0;
+    width: 100%;
+    font-size: 16px;
+    display: block;
+    border: 2px solid #000;
+    background-color: transparent;
+}
+
+textarea{
+    resize: none;
+    height: 200px;
+    background-color: transparent;
+}
+
+.feedback_Btn{
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+
+}
+
+input[type="submit"],
+input[type="reset"]{
+    font-size: 16px;
+    background-color: transparent;
+    border: 2px solid #000;
+    padding: 10px 20px;
+    margin: 0 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px){
+    input[type="submit"],
+    input[type="reset"]{
+        font-size: 17px;
+    }
+    .company_Location h3{
+        font-size: 31px;
+    }
+
+
+    .feedback_Area h3{
+        font-size: 31px;
+    }
+
+    .method_Txt p{
+        font-size: 17px;
+    }
+
+    .feedback_Title{
+        font-size: 17px;
+    }
+}
+
+
+
+@media screen and (min-width: 992px){
+    input[type="submit"],
+    input[type="reset"]{
+        font-size: 18px;
+    }
+    .company_Location h3{
+        font-size: 33px;
+    }
+
+
+    .feedback_Area h3{
+        font-size: 33px;
+    }
+
+    .method_Txt p{
+        font-size: 18px;
+    }
+
+    .feedback_Title{
+        font-size: 18px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 1200px){
+    .company_Map iframe{
+        height: 30vw; 
+    }
+
+    .company_Location,
+    .feedback_Area{
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .feedback_Btn{
+        text-align: right;
+    }
+
+    .company_Location h3{
+        font-size: 36px;
+    }
+    .method_Icon{
+        width: 37px;
+    }
+
+    .feedback_Area h3{
+        font-size: 36px;
+    }
+
+    .method_Txt p{
+        font-size: 20px;
+    }
+
+    .feedback_Title{
+        font-size: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="submit"],
+    input[type="reset"],
+    textarea{
+        font-size: 20px;
+    }
+
+    textarea{
+        height:300px;
+    }
+
+}
+
+
+
